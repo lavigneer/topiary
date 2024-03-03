@@ -1,0 +1,59 @@
+html {}
+
+div {
+  color: white;
+}
+
+div {
+  color: white;
+  background-color: red;
+}
+
+html {}
+
+div {}
+
+.indented {
+  color: blue;
+}
+
+.newlines {
+  color: blue;
+}
+
+.always-new-line {
+  color: blue;
+}
+
+.empty {}
+.oneDeclaration {
+  color: blue;
+}
+.multipleDeclarations {
+  color: blue;
+  background-color: red;
+}
+
+.newline {
+  color: blue;
+  background-color: red;
+}
+.no-trailing-semi {
+  color: blue;
+}
+
+.empty-line {
+  color: blue;
+
+  background-color: red;
+}
+.grouping {
+  color: blue;
+  color: green;
+  color: red;
+
+  background-color: red;
+  font-size: 12px;
+
+  font-weight: 700;
+}

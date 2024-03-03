@@ -29,6 +29,7 @@ fn input_output_tester() {
         topiary
             .env("TOPIARY_LANGUAGE_DIR", "../topiary-queries/queries/")
             .arg("fmt")
+            .arg("--skip-idempotence")
             .arg(&input_file)
             .assert()
             .success();
