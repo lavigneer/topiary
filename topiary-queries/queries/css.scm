@@ -7,9 +7,11 @@
 ; Append space after colons
 ":" @append_space
 
-
-[(rule_set)] @allow_blank_line_before
+(rule_set) @allow_blank_line_before
 (rule_set) @prepend_hardline
+
+; Allow blank lines before any declaration in a block except the first one
+(block . (declaration) (declaration) @allow_blank_line_before)
 
 [(selectors)] @append_space
 
@@ -26,9 +28,12 @@
 ; Always have semicolon after declarations
 (
   (declaration) @append_delimiter
-  .
-  ";"+ @do_nothing
   (#delimiter! ";")
+  (#not-match? @append_delimiter ";$")
 )
 
-(declaration) @append_hardline
+; Appends hardline between declaration
+(declaration
+  ";" @append_hardline
+)
+
