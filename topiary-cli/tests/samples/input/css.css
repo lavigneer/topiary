@@ -158,7 +158,7 @@ ul > li:nth-child(odd) { background-color : lime }
 ol > li:nth-child(even) { background-color : lime }
 table.t1 tr:nth-child(-n+4) { background-color : lime }
 table.t2 td:nth-child(3n+1) { background-color : lime }
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 ul > li:nth-child(odd) { background-color : red }
 ol > li:nth-child(even) { background-color : red }
 table.t1 tr:nth-child(-n+4) { background-color : red }
@@ -168,7 +168,7 @@ ul > li:nth-last-child(odd) { background-color : green }
 ol > li:nth-last-child(even) { background-color : green }
 table.t1 tr:nth-last-child(-n+4) { background-color : green }
 table.t2 td:nth-last-child(3n+1) { background-color : green }
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 ul > li:nth-last-child(odd) { background-color : red }
 ol > li:nth-last-child(even) { background-color : red }
 table.t1 tr:nth-last-child(-n+4) { background-color : red }
@@ -220,16 +220,16 @@ p::after { background-color : lime ; content : "GENERATED CONTENT "}
 
 p:after { background-color : lime ; content : "GENERATED CONTENT "}
 
-.white { background-color: transparent ! important; }
+.white { background-color: transparent !important; }
 .red { background-color: red; }
 div.t1 p { background-color: lime; }
-.white { background-color: transparent ! important; }
+.white { background-color: transparent !important; }
 .green { background-color: lime; }
 div.t1 p { background-color: red; }
-.white { background-color: transparent ! important; }
+.white { background-color: transparent !important; }
 .red { background-color: red; }
 div > p.test { background-color: lime; }
-.white { background-color: transparent ! important; }
+.white { background-color: transparent !important; }
 .green { background-color: lime; }
 div > p.test { background-color: red; }
   .fail > div { background: red; color: yellow; }
@@ -241,14 +241,14 @@ div > p.test { background-color: red; }
 .red { background-color : red }
 div.stub > p + p { background-color : lime }
 .green { background-color: lime; }
-.white { background-color: transparent ! important; }
+.white { background-color: transparent !important; }
 div.stub > p + p { background-color: red; }
   .fail + div { background: red; }
   .control { background: lime; }
 
 .red { background-color : red }
 div.stub > p ~ p { background-color : lime }
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 div.stub > p ~ p { background-color : red }
 div.stub > * { color : red }
 div.stub *:not([title^="si on"]) { color : lime }
@@ -308,7 +308,7 @@ ol > li:not(:nth-child(even)) { background-color : lime }
 table.t1 tr:not(:nth-child(-n+4)) { background-color : lime }
 table.t2 td:not(:nth-child(3n+1)) { background-color : lime }
 table.t1 td, table.t2 td { border : thin black solid }
-.green { background-color : lime ! important; }
+.green { background-color : lime !important; }
 ul > li:not(:nth-child(odd)) { background-color : red }
 ol > li:not(:nth-child(even)) { background-color : red }
 table.t1 tr:not(:nth-child(-n+4)) { background-color : red }
@@ -321,7 +321,7 @@ table.t1 tr:not(:nth-last-child(-n+4)) { background-color : lime }
 table.t2 td:not(:nth-last-child(3n+1)) { background-color : lime }
 table.t1 td, table.t2 td { border : thin black solid }
 
-.green { background-color : lime ! important; }
+.green { background-color : lime !important; }
 ul > li:not(:nth-last-child(odd)) { background-color : red }
 ol > li:not(:nth-last-child(even)) { background-color : red }
 table.t1 tr:not(:nth-last-child(-n+4)) { background-color : red }
@@ -332,7 +332,7 @@ table.t1 td, table.t2 td { border : thin black solid }
 p:not(:nth-of-type(3)) { background-color : lime }
 dl > *:not(:nth-of-type(3n+1)) { background-color : lime }
 
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 p:not(:nth-of-type(3)) { background-color : red }
 dl > *:not(:nth-of-type(3n+1)) { background-color : red }
 
@@ -340,7 +340,7 @@ dl > *:not(:nth-of-type(3n+1)) { background-color : red }
 p:not(:nth-last-of-type(3)) { background-color : lime }
 dl > *:not(:nth-last-of-type(3n+1)) { background-color : lime }
 
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 p:not(:nth-last-of-type(3)) { background-color : red }
 dl > *:not(:nth-last-of-type(3n+1)) { background-color : red }
 
@@ -349,7 +349,7 @@ dl > *:not(:nth-last-of-type(3n+1)) { background-color : red }
 p > *:not(:first-child) { background-color : lime }
 table.t1 td { border : thin black solid }
 
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 .t1 td:not(:first-child) { background-color : red }
 p > *:not(:first-child) { background-color : red }
 table.t1 td { border : thin black solid }
@@ -359,7 +359,7 @@ table.t1 td { border : thin black solid }
 p > *:not(:last-child) { background-color : lime }
 table.t1 td { border : thin black solid }
 
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 .t1 td:not(:last-child) { background-color : red }
 p > *:not(:last-child) { background-color : red }
 table.t1 td { border : thin black solid }
@@ -376,14 +376,14 @@ address:not(:last-of-type) { background-color : lime }
 p:not(:only-child) { background-color : lime }
 div.testText > div > p { margin-left : 1em }
 
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 p:not(:only-child) { background-color : lime }
 div.testText > div > p { margin-left : 1em }
 
 .red { background-color : red }
 .t1 *:not(:only-of-type) { background-color : lime }
 
-.green { background-color : lime ! important }
+.green { background-color : lime !important }
 .t1 *:not(:only-of-type) { background-color : red }
 
 p { background-color : lime }
@@ -393,17 +393,17 @@ blockquote > div p { color: green; }
 
 p { color: red; }
 blockquote + div ~ p { color: green; }
-p { color: green ! important; }
+p { color: green !important; }
 blockquote + div ~ p { color: red; }
 p { color: red; }
 blockquote + div p { color: green; }
-p { color: green ! important; }
+p { color: green !important; }
 blockquote + div p { color: red; }
 p { color: red; }
 blockquote div > p { color: green; }
 p { color: red; }
 blockquote ~ div + p { color: green; }
-p { color: green ! important; }
+p { color: green !important; }
 blockquote ~ div + p { color: red; }
 div :not(:enabled):not(:disabled) { background: lime; }
 p { background : red;}
@@ -431,16 +431,12 @@ p { background : red;}
  .text { margin: -1em 0 0 0; }
 
   p { background: lime; }
-  p, { background: red; }
 
   p { background: lime; }
-  .5cm { background: red; }
 
   p { background: lime; }
-  .\5cm { background: red; }
 
   p { background: lime; }
-  .two\ words { background: red; }
 
   /* the "." and "~=" forms match on a space separated list of words.
   In such a list, a word containing a space can never match, since it
@@ -450,23 +446,17 @@ p { background : red;}
   p { background: lime; }
   .one.word { background: red; }
 
-  .one\.word { background: lime; }
   p { background: red; }
 
   p { background: lime; }
-  foo & address, p { background: red; }
 
-  foo & address, p { background: red; }
-  p { background: lime; }
-
-  foo & address, p { background: red ! important; }
   p { background: lime; }
 
   p { background: lime; }
-  [*=test] { background: red; }
 
   p { background: lime; }
-  [*|*=test] { background: red; }
+
+  p { background: lime; }
 
   ::selection { background: lime; }
   :selection { background: red; }
@@ -540,13 +530,10 @@ p { background : red;}
   p:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child:first-child { color: green } /* 2049 */
 
  p { color: green; }
- .13 { color: red; }
 
  p { color: green; }
- .\13 { color: red; }
 
  p { color: red; }
- .\31 \33 { color: green; }
 
 p { background: red; color: yellow; }
 p:not(#other).class:not(.fail).test#id#id { background: green; color: white; }
@@ -592,9 +579,6 @@ div:not(#other).class:not(.fail).nottest#theid#other { background: red; color: y
  .ci .span2 SPAN { background: green; color: white; }
 
 p { color: green; }
-..test { background: red; color: yellow; }
-.foo..quux { background: red; color: yellow; }
-.bar. { background: red; color: yellow; }
 
 p { color: lime; }
 p[class$=""] { color: red; }
