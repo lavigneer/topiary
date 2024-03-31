@@ -3,27 +3,52 @@
 ;; tool of this.
 (integer_value) @leaf
 (plain_value) @leaf
+(string_value) @leaf
 
 ; Append space after colons
-":" @append_space
+(declaration ":" @append_space)
+
+(important) @prepend_space
 
 ; Spacing before and after a rule_set
 (rule_set) @allow_blank_line_before
 (rule_set) @prepend_hardline
+
+; Allow comments to have a blank line before them
+(comment) @allow_blank_line_before
 
 ; Allow blank lines before any declaration in a block except the first one
 (block . (declaration) (declaration) @allow_blank_line_before)
 
 ; Space before curly and after selectors
 [(selectors)] @append_space
-
+(descendant_selector
+  (_) @append_space
+  .
+  (_)
+)
+(sibling_selector
+  (_) @append_space
+  "~" @append_space
+  (_)
+)
+(adjacent_sibling_selector
+  (_) @append_space
+  "+" @append_space
+  (_)
+)
+(child_selector
+  (_) @append_space
+  ">" @append_space
+  (_)
+)
 
 ; Indent the declarations in the block
 (block
   .
   "{" @append_hardline @append_indent_start
   (declaration)
-  "}" @prepend_hardline @prepend_indent_end
+  "}" @prepend_hardline @prepend_indent_end @append_hardline
   .
 )
 
@@ -38,6 +63,16 @@
 ; Appends hardline between declaration
 (declaration
   ";" @append_hardline
+)
+
+(declaration
+  (property_name)
+  ":" @append_space
+  (_) @append_space
+)
+
+(declaration
+  ";" @prepend_antispace
 )
 
 (selectors
