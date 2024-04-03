@@ -775,7 +775,7 @@ p:first-letter {
 
 p:before {
   color: red;
-  content: "T";
+  content: 'T';
 }
 
 p::first-letter {
@@ -790,7 +790,7 @@ p::first-letter {
 
 p::before {
   color: red;
-  content: "T";
+  content: 'T';
 }
 
 p::before {
@@ -927,10 +927,6 @@ div.stub > * {
   color: red;
 }
 
-div.stub *:not([title^="si on"]) {
-  color: lime;
-}
-
 div.stub > * {
   color: red;
 }
@@ -941,10 +937,6 @@ div.stub *:not([title$="tait"]) {
 
 div.stub > * {
   color: red;
-}
-
-div.stub *:not([title*=" on"]) {
-  color: lime;
 }
 
 div.stub > * {
@@ -1704,42 +1696,42 @@ p:first-line {
 
 span:before {
   background-color: red;
-  content: "FAILED";
+  content: 'FAILED';
 }
 
 span::before {
   background-color: lime;
-  content: "PASSED";
+  content: 'PASSED';
 }
 
 span::before {
   background-color: red;
-  content: "FAILED";
+  content: 'FAILED';
 }
 
 span:before {
   background-color: lime;
-  content: "PASSED";
+  content: 'PASSED';
 }
 
 span:after {
   background-color: red;
-  content: "FAILED";
+  content: 'FAILED';
 }
 
 span::after {
   background-color: lime;
-  content: "PASSED";
+  content: 'PASSED';
 }
 
 span::after {
   background-color: red;
-  content: "FAILED";
+  content: 'FAILED';
 }
 
 span:after {
   background-color: lime;
-  content: "PASSED";
+  content: 'PASSED';
 }
 
 span {
@@ -3824,302 +3816,6 @@ p.span {
   color: red;
 }
 
-p:not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span):not(.span):not(.span):not(.span):not(
-    .span
-  ):not(.span):not(.span):not(.span) {
-  color: green;
-}
-
 /* 2049 */
 
 p {
@@ -4210,7 +3906,7 @@ p:not(:first-line) {
 p:not(:after) {
   color: yellow;
   background: red;
-  content: " THIS TEST HAS FAILED! ";
+  content: ' THIS TEST HAS FAILED! ';
 }
 
 p {

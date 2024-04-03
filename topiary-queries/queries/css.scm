@@ -8,6 +8,7 @@
 ; Append space after colons
 (declaration ":" @append_space)
 
+; Add space before any !important declarations
 (important) @prepend_space
 
 ; Spacing before and after a rule_set
@@ -52,7 +53,6 @@
   .
 )
 
-
 ; Always have semicolon after declarations
 (
   (declaration) @append_delimiter
@@ -65,20 +65,24 @@
   ";" @append_hardline
 )
 
+; Add space between values after a property name
 (declaration
   (property_name)
   ":" @append_space
   (_) @append_space
 )
 
+; Do not add a space between the last value and the ending semicolon
 (declaration
   ";" @prepend_antispace
 )
 
+; Newline between selectors
 (selectors
   "," @append_hardline
 )
 
+; Start block contents on new line
 (block
   "{" @append_hardline
 )
