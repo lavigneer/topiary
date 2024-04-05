@@ -42,7 +42,6 @@
   "not" @append_space
 )
 
-
 ; Add space before any !important declarations
 (important) @prepend_space
 
@@ -127,7 +126,6 @@
 (arguments
   "," @append_space
 )
-
 
 ; Newline between selectors
 (selectors
