@@ -597,11 +597,11 @@ ol > li:nth-child(even) {
   background-color: lime;
 }
 
-table.t1 tr:nth-child(-n + 4) {
+table.t1 tr:nth-child(-n+4) {
   background-color: lime;
 }
 
-table.t2 td:nth-child(3n + 1) {
+table.t2 td:nth-child(3n+1) {
   background-color: lime;
 }
 
@@ -617,11 +617,11 @@ ol > li:nth-child(even) {
   background-color: red;
 }
 
-table.t1 tr:nth-child(-n + 4) {
+table.t1 tr:nth-child(-n+4) {
   background-color: red;
 }
 
-table.t2 td:nth-child(3n + 1) {
+table.t2 td:nth-child(3n+1) {
   background-color: red;
 }
 
@@ -637,11 +637,11 @@ ol > li:nth-last-child(even) {
   background-color: green;
 }
 
-table.t1 tr:nth-last-child(-n + 4) {
+table.t1 tr:nth-last-child(-n+4) {
   background-color: green;
 }
 
-table.t2 td:nth-last-child(3n + 1) {
+table.t2 td:nth-last-child(3n+1) {
   background-color: green;
 }
 
@@ -657,11 +657,11 @@ ol > li:nth-last-child(even) {
   background-color: red;
 }
 
-table.t1 tr:nth-last-child(-n + 4) {
+table.t1 tr:nth-last-child(-n+4) {
   background-color: red;
 }
 
-table.t2 td:nth-last-child(3n + 1) {
+table.t2 td:nth-last-child(3n+1) {
   background-color: red;
 }
 
@@ -673,7 +673,7 @@ p:nth-of-type(3) {
   background-color: lime;
 }
 
-dl > :nth-of-type(3n + 1) {
+dl > :nth-of-type(3n+1) {
   background-color: lime;
 }
 
@@ -685,7 +685,7 @@ p:nth-last-of-type(3) {
   background-color: lime;
 }
 
-dl > :nth-last-of-type(3n + 1) {
+dl > :nth-last-of-type(3n+1) {
   background-color: lime;
 }
 
@@ -1093,11 +1093,11 @@ ol > li:not(:nth-child(even)) {
   background-color: lime;
 }
 
-table.t1 tr:not(:nth-child(-n + 4)) {
+table.t1 tr:not(:nth-child(-n+4)) {
   background-color: lime;
 }
 
-table.t2 td:not(:nth-child(3n + 1)) {
+table.t2 td:not(:nth-child(3n+1)) {
   background-color: lime;
 }
 
@@ -1118,11 +1118,11 @@ ol > li:not(:nth-child(even)) {
   background-color: red;
 }
 
-table.t1 tr:not(:nth-child(-n + 4)) {
+table.t1 tr:not(:nth-child(-n+4)) {
   background-color: red;
 }
 
-table.t2 td:not(:nth-child(3n + 1)) {
+table.t2 td:not(:nth-child(3n+1)) {
   background-color: red;
 }
 
@@ -1143,11 +1143,11 @@ ol > li:not(:nth-last-child(even)) {
   background-color: lime;
 }
 
-table.t1 tr:not(:nth-last-child(-n + 4)) {
+table.t1 tr:not(:nth-last-child(-n+4)) {
   background-color: lime;
 }
 
-table.t2 td:not(:nth-last-child(3n + 1)) {
+table.t2 td:not(:nth-last-child(3n+1)) {
   background-color: lime;
 }
 
@@ -1168,11 +1168,11 @@ ol > li:not(:nth-last-child(even)) {
   background-color: red;
 }
 
-table.t1 tr:not(:nth-last-child(-n + 4)) {
+table.t1 tr:not(:nth-last-child(-n+4)) {
   background-color: red;
 }
 
-table.t2 td:not(:nth-last-child(3n + 1)) {
+table.t2 td:not(:nth-last-child(3n+1)) {
   background-color: red;
 }
 
@@ -1189,7 +1189,7 @@ p:not(:nth-of-type(3)) {
   background-color: lime;
 }
 
-dl > *:not(:nth-of-type(3n + 1)) {
+dl > *:not(:nth-of-type(3n+1)) {
   background-color: lime;
 }
 
@@ -1201,7 +1201,7 @@ p:not(:nth-of-type(3)) {
   background-color: red;
 }
 
-dl > *:not(:nth-of-type(3n + 1)) {
+dl > *:not(:nth-of-type(3n+1)) {
   background-color: red;
 }
 
@@ -1213,7 +1213,7 @@ p:not(:nth-last-of-type(3)) {
   background-color: lime;
 }
 
-dl > *:not(:nth-last-of-type(3n + 1)) {
+dl > *:not(:nth-last-of-type(3n+1)) {
   background-color: lime;
 }
 
@@ -1225,7 +1225,7 @@ p:not(:nth-last-of-type(3)) {
   background-color: red;
 }
 
-dl > *:not(:nth-last-of-type(3n + 1)) {
+dl > *:not(:nth-last-of-type(3n+1)) {
   background-color: red;
 }
 
@@ -2765,7 +2765,6 @@ span,
 span {
   color: green;
 }
-
 /* 2049 */
 
 .span {
@@ -3815,8 +3814,6 @@ span {
 p.span {
   color: red;
 }
-
-/* 2049 */
 
 p {
   color: red;
