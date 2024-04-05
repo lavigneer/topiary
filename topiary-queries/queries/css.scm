@@ -4,9 +4,25 @@
 (integer_value) @leaf
 (plain_value) @leaf
 (string_value) @leaf
+(color_value) @leaf
+(float_value) @leaf
+(grid_value) @leaf
 
 ; Append space after colons
 (declaration ":" @append_space)
+
+; Append space after import
+(import_statement "@import" @append_space)
+(import_statement) @prepend_hardline @allow_blank_line_before
+
+; Append space after media
+(media_statement "@media" @append_space)
+(media_statement) @prepend_hardline @allow_blank_line_before
+
+; Space around and in binary queries
+(binary_query
+  "and" @prepend_space @append_space
+)
 
 ; Add space before any !important declarations
 (important) @prepend_space
@@ -22,7 +38,7 @@
 (block . (declaration) (declaration) @allow_blank_line_before)
 
 ; Space before curly and after selectors
-[(selectors)] @append_space
+(selectors) @append_space
 (descendant_selector
   (_) @append_space
   .
@@ -48,7 +64,7 @@
 (block
   .
   "{" @append_hardline @append_indent_start
-  (declaration)
+  (_)
   "}" @prepend_hardline @prepend_indent_end @append_hardline
   .
 )
@@ -77,6 +93,15 @@
   ";" @prepend_antispace
 )
 
+(declaration
+  "," @prepend_antispace @append_space
+)
+
+(arguments
+  "," @append_space
+)
+
+
 ; Newline between selectors
 (selectors
   "," @append_hardline
@@ -86,3 +111,4 @@
 (block
   "{" @append_hardline
 )
+
