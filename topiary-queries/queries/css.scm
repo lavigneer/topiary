@@ -10,26 +10,44 @@
 
 ; Append space after colons
 (declaration ":" @append_space)
+(feature_query
+  ":" @append_space
+)
 
 ; Append space after import
 (import_statement "@import" @append_space)
+(import_statement ";" @append_hardline)
 (import_statement) @prepend_hardline @allow_blank_line_before
 
-; Append space after media
+; Append space after charset
+(charset_statement "@charset" @append_space)
+(charset_statement ";" @append_hardline)
+(charset_statement) @prepend_hardline @allow_blank_line_before
+
+; Append space after media and hardlines around it
 (media_statement "@media" @append_space)
-(media_statement) @prepend_hardline @allow_blank_line_before
+(media_statement "," @append_space)
+(media_statement) @allow_blank_line_before @prepend_hardline
+
+; Append space after keyframe and hardlines around it
+(keyframes_statement "@keyframes" @append_space)
+(keyframes_statement) @prepend_hardline @allow_blank_line_before
 
 ; Space around and in binary queries
 (binary_query
   "and" @prepend_space @append_space
 )
+; Space around and in binary queries
+(unary_query
+  "not" @append_space
+)
+
 
 ; Add space before any !important declarations
 (important) @prepend_space
 
 ; Spacing before and after a rule_set
-(rule_set) @allow_blank_line_before
-(rule_set) @prepend_hardline
+(rule_set) @allow_blank_line_before @prepend_hardline
 
 ; Allow comments to have a blank line before them
 (comment) @allow_blank_line_before
@@ -63,7 +81,16 @@
 ; Indent the declarations in the block
 (block
   .
-  "{" @append_hardline @append_indent_start
+  "{" @append_hardline @append_indent_start @prepend_space
+  (_)
+  "}" @prepend_hardline @prepend_indent_end @append_hardline
+  .
+)
+
+; Indent the declarations in the keyframe_block_list
+(keyframe_block_list
+  .
+  "{" @append_hardline @append_indent_start @prepend_space
   (_)
   "}" @prepend_hardline @prepend_indent_end @append_hardline
   .
@@ -107,8 +134,15 @@
   "," @append_hardline
 )
 
-; Start block contents on new line
-(block
-  "{" @append_hardline
+; Space between operators in binary expressions
+(binary_expression ["+" "*" "-" "/"] @append_space @prepend_space)
+
+; Space between values in arguments lists that don't always use commas
+(call_expression
+  (arguments
+    (_) @append_space
+    .
+    ["," ")"]* @do_nothing
+  )
 )
 
